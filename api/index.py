@@ -446,4 +446,4 @@ def decrypt():
         return jsonify({"plaintext": plaintext.decode("utf-8")})
 
     except Exception:
-        return jsonify({"Error": "Invalid KEY or ENCRYPTED TEXT."}), 400
+        return jsonify({"error": "Invalid KEY or ENCRYPTED TEXT."}), 400
