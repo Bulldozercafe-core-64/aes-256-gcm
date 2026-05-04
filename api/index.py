@@ -210,7 +210,7 @@ HTML = r"""<!DOCTYPE html>
     background: #070810;
     border: 1px solid var(--border);
     border-radius: 7px;
-    padding: 10px 14px;
+    padding: 10px 60px 10px 14px;
     font-size: .78rem;
     word-break: break-all;
     line-height: 1.6;
@@ -447,5 +447,3 @@ def decrypt():
 
     except Exception:
         return jsonify({"Error": "Invalid KEY or ENCRYPTED TEXT."}), 400
-
-
