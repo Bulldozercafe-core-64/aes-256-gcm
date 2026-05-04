@@ -260,7 +260,7 @@ HTML = r"""<!DOCTYPE html>
 
 <header>
   <h1>AES-256-GCM</h1>
-  <p>Authenticated Encryption</p>
+  <p>Authenticated Encryption · Decryption</p>
 </header>
 
 <!-- Tabs -->
