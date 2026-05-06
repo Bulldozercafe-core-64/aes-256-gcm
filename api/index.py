@@ -332,6 +332,17 @@ function switchTab(t) {
   document.getElementById('tabDec').classList.toggle('active', t === 'dec');
 }
 
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    const encVisible = document.getElementById('cardEnc').classList.contains('visible');
+    const activeEl   = document.activeElement;
+    if (activeEl.tagName === 'TEXTAREA' || activeEl.tagName === 'INPUT') {
+      e.preventDefault();
+    }
+    if (encVisible) { doEncrypt(); } else { doDecrypt(); }
+  }
+});
+
 async function doEncrypt() {
   const text = document.getElementById('plaintext').value.trim();
   if (!text) { alert('Please enter text to encrypt.'); return; }
