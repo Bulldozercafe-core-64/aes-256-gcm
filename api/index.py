@@ -321,7 +321,7 @@ HTML = r"""<!DOCTYPE html>
 </div>
 
 <footer>
-  AES-256 · GCM Mode · 96-bit Nonce · 128-bit Auth Tag &nbsp;|&nbsp; Key never leaves your server
+  AES-256 · GCM Mode · 96-bit Nonce · 128-bit Auth Tag &nbsp;|&nbsp; No data is stored on the server
 </footer>
 
 <script>
